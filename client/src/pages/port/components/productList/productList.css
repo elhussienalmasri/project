@@ -1,0 +1,148 @@
+
+.projects {
+  background-color: #000016;
+  /* padding: 100px 50px; */
+   padding: 0px 50px; 
+
+  position: relative;
+  animation: animate 5s linear infinite;
+  
+}
+
+@keyframes animate 
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color:#0e3742; 
+    box-shadow: none;
+  }
+
+ 18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1% ,100%
+  {
+    color: #fff;
+    box-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4
+
+  }
+}
+
+
+
+.projects .content{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 300px;
+  
+  
+  
+  
+}
+
+
+.title{
+  color:#fff;
+  display: flex;
+  
+  top: 30px ;
+  position: absolute;
+  justify-content: center;
+  margin-left: 40%;
+  font-size:3.4rem;
+  font-weight: 400;
+  color:#4e9eff;
+}
+
+
+.contain{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.contain span{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  animation: animatee 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i)) ;
+}
+
+@keyframes animatee 
+{
+  0%{
+    transform: translateY(0px);
+  }
+  20%
+    {
+      transform: translateY(-20px);
+    }
+
+    40%,100%
+    {
+      transform: translateY(0px);
+    }
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+  /* .projects {
+    padding: 10px 10px;
+    
+  } */
+  .projects .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .title{
+   text-align: center;
+   position: relative;
+   margin-left: 0px;
+   font-size:2rem;
+   padding-bottom: 6rem;
+  }
+ 
+}
+
+@media screen and (min-width:845px) and (max-width:1240px){
+ 
+  .projects .content{
+    column-gap: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    
+  }
+
+
+.projects{
+ padding: 5px 5px;
+
+}
+
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:844px){
+
+  .projects .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}

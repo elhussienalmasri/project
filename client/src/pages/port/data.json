@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "_id": 1,
+      "image": "./img/market.jpg",
+      "title": "E-Commerce website",
+      "category": "E-Commerce  website using MERN Stack made by using 1-HTML,CSS,JavaScript 2-React:components,props,hooks,routers,AXIOS 3-material-UI:Grid,Typography , Card media -CSS for styling 4-redux:store,action,reducers 5-Node&Express 6-MongoDB:Mongoose",
+       "anch":"learn more",
+       "href":"https://github.com/elhussienalmasri/store",
+       "target":"_blank"
+     
+    },
+    {
+      "_id": 2,
+      "image": "./img/blog.jpg",
+      "title": "blog website",
+      "category": "its a blog website for daily news contain a page for add a blog ,user can search for blog by its name made by used 1- HTML, CSS, JavaScript 2- Node JS,Express JS 3-body-parser to handle input 4-CSS for styling 5-EJS templating to generate HTML markup with plain JavaScript ,and more ",
+      "anch":"learn more",
+      "href":"https://github.com/elhussienalmasri/blog-site",
+      "target":"_blank"
+    },
+    {
+      "_id": 3,
+      "image": "./img/portfolio.jpg",
+      "title": "react-portfolio",
+      "category": "its a react-portfolio contain from four section made by used react component ,props ,hooks and more ,CSS for styling and I use media query to make portfolio responsive and some animation using CSS",
+      "anch":"learn more",
+      "href":"https://github.com/elhussienalmasri/react-portfolio",
+      "target":"_blank"
+     
+    },
+    {
+      "_id": 4,
+      "image": "./img/pic.jpg",
+      "title": "this site",
+      "category": "I design and develop this website it,s contain from five section and also contain another page for blog , I develop it as most of my projects using React as Frontend and Node JS as a Backend and Mongo DB as Database ",
+      "anch":"learn more",
+      "href":"/",
+      "target":"_self"
+      
+    }
+    
+  ]
+}

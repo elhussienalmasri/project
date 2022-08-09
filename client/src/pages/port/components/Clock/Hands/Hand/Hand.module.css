@@ -1,0 +1,13 @@
+.Hand {
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  height: fit-content;
+}
+
+.Half {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

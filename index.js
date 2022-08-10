@@ -14,7 +14,8 @@ const path = require("path");
 
 // const DB_URL = "mongodb://localhost:27017/blog1";
  const PORT=process.env.PORT ||5000;
-dotenv.config();
+
+ dotenv.config();
 
 const DB_URL =process.env.MONGO_URL ;
 app.use(express.json());

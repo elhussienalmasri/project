@@ -2,7 +2,7 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
-  const PF = "https://hussein-developer.herokuapp.com/images/";
+  const PF = "http://hussein-developer.herokuapp.com/images/";
 
 
   const d = new Date(post.createdAt);

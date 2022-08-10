@@ -13,8 +13,7 @@ const multer = require("multer");
 const path = require("path");
 
 // const DB_URL = "mongodb://localhost:27017/blog1";
-
-// const PORT=process.env.PORT ||5000;
+ const PORT=process.env.PORT ||5000;
 dotenv.config();
 
 const DB_URL =process.env.MONGO_URL ;
@@ -60,6 +59,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
 });
 
-app.listen(process.env.PORT ||5000, () => {
+app.listen(PORT , () => {
   console.log("Backend is running.");
 });

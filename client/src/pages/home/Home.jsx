@@ -23,7 +23,7 @@ export default function Home() {
     window.location.reload()
    }
 
- },[empty])
+ },[])
 
   useEffect(() => {
     const fetchPosts = async () => {

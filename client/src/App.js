@@ -23,7 +23,9 @@ function App() {
         <Route exact path="/">
           < Port />
         </Route>
-       
+        <Route path="/b">
+          <Home />
+        </Route>
         <Route path="/blog/regmh*159"><Register /></Route>
         <Route path="/blog/logmh*159"> <Login /></Route>
         <Route path="/blog/write">{user ? <Write /> : <Home /> }</Route>

@@ -43,7 +43,7 @@ function Navbar() {
           <ul className="nav-items">
             {navItems.map((item) => {
               return (
-                <li key={item.id} className={item.nName}>
+                <li key={item.id} className={item.nName}z>
                   <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>

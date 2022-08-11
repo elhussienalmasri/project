@@ -56,7 +56,7 @@ const Intro = () => {
 
         <div className="right">
           
-        <img src={intro} className={mobile?'mImg':'img'}  alt=""/>
+        <img className={mobile?'mImg':'img'} src={intro}   alt=""/>
         
       </div>
       

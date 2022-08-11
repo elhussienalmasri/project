@@ -9,11 +9,12 @@ import MessageBox from "../../pages/port/components/message/MessageBox";
 
 
 
+
 export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "http://hussein-developer.herokuapp.com/images/";
+  const PF = "../../../../../api/images/";
   const { user , dispatch } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");

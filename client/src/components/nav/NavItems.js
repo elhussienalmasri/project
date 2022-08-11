@@ -17,7 +17,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaBlog />,
-    click: ()=>window.location.reload()
+    click: ()=>window.location("/b").reload()
    
   },
   {

@@ -8,7 +8,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaHome />,
-    click:"return false"
+    click:""
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaBlog />,
-    click:()=>window.location.reload
+    click:()=>window.location.reload()
    
   },
   {
@@ -27,7 +27,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaParagraph/>,
-    click:"return false"
+    click:""
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaRProject />,
-    click:"return false"
+    click:""
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaBook />,
-    click:"return false"
+    click:""
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const navItems = [
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaPhone />,
-    click:"return false"
+    click:""
    }
  
 ];

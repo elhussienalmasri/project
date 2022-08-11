@@ -22,7 +22,7 @@ export default function Home() {
     const fetchPosts = async () => {
 
       try{
-        window.location.reload();
+       
         setLoading(true);
         const res = await axiosInstance.get("/posts" + search);
         setPosts(res.data);
@@ -37,6 +37,9 @@ export default function Home() {
       catch (err) {
         setError(err.message);
         setLoading(false);
+      }
+      finally{
+        window.location.reload();
       }
       // finally{
       //   if (posts.length < 1){

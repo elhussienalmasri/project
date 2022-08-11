@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Posts from "../../components/posts/Posts";
 import "./home.css";
 import { axiosInstance } from "../../config";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router";
 import LoadingSpinner from "../port/components/spinner/spinner";
 import MessageBox from "../port/components/message/MessageBox";
 
@@ -15,11 +15,14 @@ export default function Home() {
   const [empty, setEmpty] =useState(false);
 
 
+ 
+ 
+
   useEffect(() => {
     const fetchPosts = async () => {
 
       try{
-
+        window.location.reload();
         setLoading(true);
         const res = await axiosInstance.get("/posts" + search);
         setPosts(res.data);
@@ -48,22 +51,9 @@ export default function Home() {
     fetchPosts();
   }, [search]);
 
-
-  const location = useLocation()
-
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1))
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" })
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-    }
-  }, [location,])
   
   return (
-    <div id='blog'>
+    <div id='b'>
       {loading?
      ( <LoadingSpinner></LoadingSpinner>): error?(
     <div style={{height:'50vh',display:'flex',alignItems:'center',justifyContent:"center"}} > 

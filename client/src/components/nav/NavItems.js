@@ -12,7 +12,7 @@ export const navItems = [
   {
     id: 2,
     title: "Blog",
-    path: "/#blog",
+    path: "/b",
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaBlog />,

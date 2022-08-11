@@ -81,7 +81,7 @@ function Navbar() {
                 className={item.sName}
                 onClick={() => setSidebar(false)}
               >
-                <Link onClick={item.click} to={item.path} >
+                <Link to={item.path}>
                   {item.icon}
                   <span>{item.title}</span>
                 </Link>

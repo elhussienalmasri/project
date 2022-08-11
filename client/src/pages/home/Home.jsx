@@ -17,12 +17,8 @@ export default function Home() {
 
  
  useEffect(()=>{
-   if(empty){
      window.location.reload()
-   }else if (!empty){
-    window.location.reload()
-   }
-
+  
  },[])
 
   useEffect(() => {

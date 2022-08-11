@@ -16,7 +16,14 @@ export default function Home() {
 
 
  
- 
+ useEffect(()=>{
+   if(empty){
+     window.location.reload()
+   }else if (!empty){
+    window.location.reload()
+   }
+
+ },[empty])
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -38,9 +45,7 @@ export default function Home() {
         setError(err.message);
         setLoading(false);
       }
-      finally{
-        window.location.reload();
-      }
+     
       // finally{
       //   if (posts.length < 1){
       //     setEmpty(true);

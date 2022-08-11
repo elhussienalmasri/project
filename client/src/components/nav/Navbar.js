@@ -43,7 +43,7 @@ function Navbar() {
           <ul className="nav-items">
             {navItems.map((item) => {
               return (
-                <li key={item.id} className={item.nName}z>
+                <li key={item.id} className={item.nName}>
                   <Link to={item.path}>
                     {item.icon}
                     <span>{item.title}</span>
@@ -81,7 +81,7 @@ function Navbar() {
                 className={item.sName}
                 onClick={() => setSidebar(false)}
               >
-                <Link to={item.path}>
+                <Link to={item.path} onClick={item.click}>
                   {item.icon}
                   <span>{item.title}</span>
                 </Link>

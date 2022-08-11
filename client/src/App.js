@@ -11,10 +11,7 @@ import { Context } from "./context/Context";
 import Port from "./pages/port/port"
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/nav/Navbar"
-import About from "./pages/port/components/about/About";
-import ProductList from "./pages/port/components/productList/ProductList";
-import Skills from "./pages/port/components/skills/skills";
-import Contact from "./pages/port/components/contact/Contact";
+
 
 
 function App() {
@@ -26,13 +23,7 @@ function App() {
         <Route exact path="/">
           < Port />
         </Route>
-        <Route  path='/about'><About /></Route>
-        <Route  path='/projects'><ProductList /></Route>
-        <Route  path='/skills'><Skills /></Route>
-        <Route  path='/contact'><Contact /></Route>
-        <Route path="/blog">
-          <Home />
-        </Route>
+       
         <Route path="/blog/regmh*159"><Register /></Route>
         <Route path="/blog/logmh*159"> <Login /></Route>
         <Route path="/blog/write">{user ? <Write /> : <Home /> }</Route>

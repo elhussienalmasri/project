@@ -16,16 +16,13 @@ export default function Home() {
 
 
  
- useEffect(()=>{
-     window.location.reload()
-  
- },[])
+ 
 
   useEffect(() => {
     const fetchPosts = async () => {
 
       try{
-       
+
         setLoading(true);
         const res = await axiosInstance.get("/posts" + search);
         setPosts(res.data);
@@ -41,7 +38,6 @@ export default function Home() {
         setError(err.message);
         setLoading(false);
       }
-     
       // finally{
       //   if (posts.length < 1){
       //     setEmpty(true);

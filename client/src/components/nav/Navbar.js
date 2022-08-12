@@ -81,7 +81,7 @@ function Navbar() {
                 className={item.sName}
                 onClick={() => setSidebar(false)}
               >
-                {item.id=2?
+                {item.id===2?
                 <a href={item.path}>
                 {item.icon}
                 <span>{item.title}</span>

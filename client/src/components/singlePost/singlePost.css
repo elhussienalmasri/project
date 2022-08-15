@@ -74,7 +74,8 @@
   /* line-height: 25px; */
   line-height: 50px;
   text-align: center;
-  width:75%
+  width:75%;
+  white-space: pre-wrap;
 }     
 
 .singlePostDesc::first-letter {

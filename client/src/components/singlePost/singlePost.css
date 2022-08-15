@@ -73,9 +73,11 @@
   font-size: 18px;
   /* line-height: 25px; */
   line-height: 50px;
-  text-align: center;
-  width:75%;
+  /* text-align: center;
+  width:75%; */
   white-space: pre-wrap;
+  max-width:100vw ;
+  box-sizing: border-box;
 }     
 
 .singlePostDesc::first-letter {
@@ -147,9 +149,11 @@
    padding: 10px;
  }
 
- .singlePostDesc{
-   width: 90%;
- }
+ /* .singlePostDesc{ */
+  /* width: 90%; */
+  /* max-width:100vw ; 
+  box-sizing: border-box; */
+ /* } */
 
 }
 

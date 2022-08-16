@@ -6,13 +6,22 @@ import { Link } from "react-router-dom";
 
 const Intro = () => {
   const [mobile, setMobile] = useState(false);
+  const[size,setSize]= useState(window.innerWidth);
 
 
   useEffect(() => {
-    if (window.innerWidth <600) {
-      setMobile(true);
-    }
-  }, []);
+
+    window.addEventListener('resize',updateWidth);
+    
+      setMobile(()=>(size<600?true:false));
+
+      return()=>window.removeEventListener('resize',updateWidth)
+   
+  }, [size]);
+
+const updateWidth=()=>{
+  setSize(window.innerWidth)
+}
   return (
     <div className="i">
     

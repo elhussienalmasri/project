@@ -81,19 +81,14 @@ function Navbar() {
                 className={item.sName}
                 onClick={() => setSidebar(false)}
               >
-                {item.id===2?
-                <a href={item.path}>
-                {item.icon}
-                <span>{item.title}</span>
-              </a>
-              :
+               
               <Link to={item.path}>
                   {item.icon}
                   <span>{item.title}</span>
-                </Link>
+               </Link>
               
               
-              }
+             
                
               </li>
             );

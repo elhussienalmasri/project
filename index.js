@@ -11,6 +11,9 @@ const categoryRoute = require("./routes/categories");
 const backgroundRoute = require("./routes/background");
 const multer = require("multer");
 const path = require("path");
+const cors = require('cors')
+
+app.use(cors());
 
 // const DB_URL = "mongodb://localhost:27017/blog1";
  const PORT=process.env.PORT ||5000;
